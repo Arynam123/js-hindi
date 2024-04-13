@@ -53,3 +53,35 @@ function userloggin(username){
     return`${username} just logged in`
 }
 console.log(userloggin())
+
+
+function daanpeti(...val){
+    return val
+}
+console.log(daanpeti(100,200,4,93493))
+ 
+
+const user={
+    username:"Aryan",
+    price:322
+}
+function handleObject(objhandle){
+    return (`the username is ${objhandle.username} and price is ${objhandle.price}`)
+}
+console.log(handleObject(user))
+
+
+function getfirstvalue(objarray){
+    return objarray[1]
+}
+console.log(getfirstvalue([1,3,4,44]))
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray));
+
+
+
