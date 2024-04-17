@@ -31,7 +31,46 @@ myobj={
     username:"Aryan",
     id:"323",
 }
-for (const [key,value] of myobj) {
-    console.log(key,"-",value);  
+// for (const [key,value] of myobj) {
+//     console.log(key,"-",value);  
+// }
+for (const key in myobj) {
+    if (Object.hasOwnProperty.call(myobj, key)) {
+        const element = myobj[key];
+        console.log(element)
+
+    }   
 }
 
+myobj1={
+    js:"javascript",
+    cpp:"c++",
+    py:"Python",
+    rb:"ruby",
+    swift:"Swift by apple"
+}
+for(const key in myobj1){
+    //console.log(key)
+    console.log(`${key} corresponds to the ${myobj1[key]}`)
+
+
+}
+
+
+
+const programming=["java","c++","python","Ruby"]
+for(const key in programming){
+    console.log(programming[key])
+
+}
+
+//map does not work for for in
+const map1 = new Map()
+map1.set('IN', "India")
+map1.set('USA', "United States of America")
+map1.set('Fr', "France")
+map1.set('IN', "India")
+
+for (const key in map1) {
+    console.log(value);
+}
